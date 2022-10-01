@@ -1,0 +1,9 @@
+ul.navbar-nav li a{
+    color: rgb(207, 214, 200) !important;
+}
+ul.navbar-nav li a i{
+    color: rgb(207, 214, 200) !important;
+}
+.navbar-brand{
+    color: rgb(255, 55, 0) !important;
+}
