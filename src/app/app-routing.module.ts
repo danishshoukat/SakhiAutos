@@ -7,24 +7,31 @@ import { AddproductComponent } from './Components/addproduct/addproduct.componen
 import { SalesReportComponent } from './Components/sales-report/sales-report.component';
 
 const routes: Routes = [
-  {path:"",component:LoginComponent},
-  {path:"login",component:LoginComponent},
-  {path:"dashboard",component:DashboardComponent, children:[
-    {
-      path:"products", component:ProductsComponent
-    },
-    {
-      path:"addproduct", component:AddproductComponent
-    },
-    {
-      path:"salesReport", component:SalesReportComponent
-    }
-  ]},
+  { path: '', component: LoginComponent },
+  { path: 'login', component: LoginComponent },
+  {
+    path: 'dashboard',
+    component: DashboardComponent,
+    children: [
+      {
+        path: 'products',
+        component: ProductsComponent,
+      },
+      {
+        path: 'addproduct',
+        component: AddproductComponent,
+      },
+      {
+        path: 'salesReport',
+        component: SalesReportComponent,
+      },
+    ],
+  },
   // {path:"products",component:ProductsComponent}
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
