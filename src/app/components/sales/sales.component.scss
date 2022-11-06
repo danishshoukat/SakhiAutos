@@ -1,0 +1,60 @@
+.container {
+  padding: 2rem 0rem;
+}
+.products {
+  width: 82vw;
+  min-height: 91.5vh;
+  max-height: 91.5vh;
+  height: 91.5vh;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 10px 5px 10px;
+}
+table {
+  margin: 10px 10px 5px 10px;
+}
+.table-image {
+  thead {
+    td,
+    th {
+      border: 0;
+      color: #666;
+      font-size: 0.8rem;
+    }
+  }
+
+  td,
+  th {
+    vertical-align: middle;
+    text-align: center;
+
+    &.qty {
+      max-width: 2rem;
+    }
+  }
+}
+.qty {
+  max-width: 4rem;
+}
+.add-to-cart {
+  display: flex;
+}
+
+.price {
+  margin-left: 1rem;
+}
+
+// View Products
+
+.show-cart li {
+  display: flex;
+}
+.card {
+  margin-bottom: 20px;
+}
+
+.card-block {
+  padding: 20px;
+}
